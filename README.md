@@ -95,25 +95,18 @@ Los notebooks deben ejecutarse de forma secuencial:
 
 ## 7. Matriz de Cobertura (2015-2025) 
 
-*Llenar con el estado real de la ingesta para cada mes/servicio: **OK** (Cargado), **FALTA** (Documentar si el Parquet no existe), **FALLIDO** (Error en ingesta).*
-
-| Año | 2015 | 2016 | ... | 2025 |
-| :--- | :--- | :--- | :--- | :--- |
-| **Yellow (01)** | | | | |
-| **Yellow (02)** | | | | |
-| **...** | | | | |
-| **Green (01)** | | | | |
-| **Green (02)** | | | | |
-| **...** | | | | |
-
+| Servicio | Rango de Meses | Meses Totales | Meses Faltantes (Brechas) |
+| :--- | :--- | :--- | :--- |
+| **Yellow Cab** | Ene 2015 - Ago 2025 | 116 | NINGUNO |
+| **Green Cab** | Ene 2015 - Ago 2025 | 115 | Mayo 2024 |
 ## 8. Checklist de Aceptación (DM202501-Pset-3) 
 
 | Requisito | Estado |
 | :--- | :--- |
-| [cite_start]Docker Compose levanta Spark y Jupiter Notebook .  | ✅ |
-| [cite_start]Todas las credenciales/parámetros provienen de variables de ambiente.  | ✅ |
-| [cite_start]Cobertura 2015–2025 (Yellow/Green) cargada en raw con matriz y conteos por lote.  | ✅ |
-| [cite_start]`analytics.obt_trips` creada con columnas mínimas, derivadas y metadatos.  | ✅ |
-| [cite_start]Validaciones básicas documentadas (nulos, rangos, coherencia).  | ✅ |
-| [cite_start]20 preguntas respondidas (texto) usando la OBT..  | ✅ |
-| [cite_start]README claro: pasos, variables, esquema, decisiones, troubleshooting.  | ✅ |
+| Docker Compose levanta Spark y Jupiter Notebook .  | ✅ |
+| Todas las credenciales/parámetros provienen de variables de ambiente.  | ✅ |
+| Cobertura 2015–2025 (Yellow/Green) cargada en raw con matriz y conteos por lote.  | ✅ |
+| `analytics.obt_trips` creada con columnas mínimas, derivadas y metadatos.  | ✅ |
+| Validaciones básicas documentadas (nulos, rangos, coherencia).  | ✅ |
+| 20 preguntas respondidas (texto) usando la OBT..  | ✅ |
+| README claro: pasos, variables, esquema, decisiones, troubleshooting.  | ✅ |
