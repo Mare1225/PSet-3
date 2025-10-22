@@ -4,7 +4,7 @@
 
 Este proyecto implementa una infraestructura de procesamiento de datos con **Docker Compose** que orquesta un entorno **Jupyter+Spark** para la ingesta masiva y transformación de datos hacia **Snowflake**
 
-El objetivo es replicar la ingesta del dataset **NYC TLC Trip Record Data (Yellow y Green, 2015-2025)** , aterrizándolo en un esquema `raw` en Snowflake. [ t]Posteriormente, se construye una tabla analítica desnormalizada única, la **One Big Table (OBT)** , llamada `analytics.obt_trips`, desde la cual se responden 20 preguntas de negocio mediante Spark. Todas las credenciales y parámetros se manejan estrictamente con variables de ambiente.
+El objetivo es replicar la ingesta del dataset **NYC TLC Trip Record Data (Yellow y Green, 2015-2025)** , aterrizándolo en un esquema `raw` en Snowflake. Posteriormente, se construye una tabla analítica desnormalizada única, la **One Big Table (OBT)** , llamada `analytics.obt_trips`, desde la cual se responden 20 preguntas de negocio mediante Spark. Todas las credenciales y parámetros se manejan estrictamente con variables de ambiente.
 
 ## 2. Arquitectura (Diagrama/Tabla)
 
@@ -31,9 +31,9 @@ Todas las credenciales y parámetros provienen de variables de ambiente. Se proh
 | `SNOWFLAKE_USER` | Usuario de Snowflake | Snowflake |
 | `SNOWFLAKE_PASSWORD` | Contraseña de Snowflake  | Snowflake |
 | `SNOWFLAKE_DB` | Base de datos principal | Snowflake |
-| `SNOWFLAKE_SCHEMA_RAW` | [ t]Esquema de aterrizaje (ej: `raw`)  | Snowflake |
-| `SNOWFLAKE_SCHEMA_ANALYTICS` | [ t]Esquema analítico (ej: `analytics`)  | Snowflake |
-| `PARQUET_BASE_URL` | [ t]Rutas/URL origen de los archivos Parquet | Parquet |
+| `SNOWFLAKE_SCHEMA_RAW` | Esquema de aterrizaje (ej: `raw`)  | Snowflake |
+| `SNOWFLAKE_SCHEMA_ANALYTICS` | Esquema analítico (ej: `analytics`)  | Snowflake |
+| `PARQUET_BASE_URL` | Rutas/URL origen de los archivos Parquet | Parquet |
 | `TARGET_YEARS` | Años a procesar | Parámetros |
 | `TARGET_MONTHS` | Meses a procesar | Parámetros |
 | `TARGET_SERVICES` | Servicios a procesar | Parámetros |
@@ -43,8 +43,8 @@ Todas las credenciales y parámetros provienen de variables de ambiente. Se proh
 ## 4. Pasos para Docker Compose y Ejecución de Notebooks
 
 ### 4.1. Infraestructura
-1.  [ t]**Requisitos:** Docker y Docker Compose.
-2.  [ t]**Configuración:** Crea el archivo `.env` (guía para env).
+1.  **Requisitos:** Docker y Docker Compose.
+2.  **Configuración:** Crea el archivo `.env` (guía para env).
 3.  **Levantar Servicios:**
     ```bash
     docker-compose up -d
