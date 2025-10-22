@@ -1,0 +1,27 @@
+services:
+  spark:
+    image: spark:python3 
+    container_name: spark-box 
+    command: sleep infinity 
+    working_dir: /work
+    volumes:
+      - ./work/:/work
+    tty: true
+    stdin_open: true 
+    ports: 
+      - "4040:4040"
+    environment:
+      - PYSPARK_PYTHON=python3
+  
+  pyspark-notebook:
+    image: jupyter/pyspark-notebook:latest
+    container_name: pyspark-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./work:/home/jovyan/work
+    environment:
+      - SPARK_LOCAL_IP=0.0.0.0
+      - PYSPARK_PYTHON=python3
+
+    
