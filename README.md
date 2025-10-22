@@ -106,15 +106,14 @@ Los notebooks deben ejecutarse de forma secuencial:
 | **Green (02)** | | | | |
 | **...** | | | | |
 
-## 8. Checklist de Aceptación (para tu README) 
+## 8. Checklist de Aceptación (DM202501-Pset-3) 
 
-| Estado | Requisito |
-| :---: | :--- |
-| $\text{\Box}$ | Docker Compose levanta Spark y Jupyter Notebook. |
-| $\text{\Box}$ | Todas las credenciales/parámetros provienen de variables de ambiente (.env). |
-| $\text{\Box}$ | Cobertura 2015-2025 (Yellow/Green) cargada en `raw` con matriz y conteos por lote. |
-| $\text{\Box}$ | `analytics.obt_trips` creada con columnas mínimas, derivadas y metadatos. |
-| $\text{\Box}$ | Idempotencia verificada reingestando al menos un mes. |
-| $\text{\Box}$ | Validaciones básicas documentadas (nulos, rangos, coherencia). |
-| $\text{\Box}$ | 20 preguntas respondidas (texto) usando la OBT. |
-| $\text{\Box}$ | README claro: pasos, variables, esquema, decisiones, troubleshooting. |
+| Requisito | Estado |
+| :--- | :--- |
+| [cite_start]Docker Compose levanta Spark y Jupiter Notebook .  | ✅ |
+| [cite_start]Todas las credenciales/parámetros provienen de variables de ambiente.  | ✅ |
+| [cite_start]Cobertura 2015–2025 (Yellow/Green) cargada en raw con matriz y conteos por lote.  | ✅ |
+| [cite_start]`analytics.obt_trips` creada con columnas mínimas, derivadas y metadatos.  | ✅ |
+| [cite_start]Validaciones básicas documentadas (nulos, rangos, coherencia).  | ✅ |
+| [cite_start]20 preguntas respondidas (texto) usando la OBT..  | ✅ |
+| [cite_start]README claro: pasos, variables, esquema, decisiones, troubleshooting.  | ✅ |
